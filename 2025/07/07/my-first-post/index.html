@@ -178,7 +178,7 @@
     const countELement = document.getElementById('twikoo-count')
     if(!countELement) return
     twikoo.getCommentsCount({
-      envId: 'https://my-twikoo-git-main-howards-projects-2a9d4703.vercel.app',
+      envId: 'https://hexo-blog-git-main-howards-projects-2a9d4703.vercel.app',
       region: '',
       urls: [window.location.pathname],
       includeReply: false
@@ -192,7 +192,7 @@
   const init = (el = document, path = location.pathname) => {
     twikoo.init({
       el: el.querySelector('#twikoo-wrap'),
-      envId: 'https://my-twikoo-git-main-howards-projects-2a9d4703.vercel.app',
+      envId: 'https://hexo-blog-git-main-howards-projects-2a9d4703.vercel.app',
       region: '',
       onCommentLoaded: () => {
         btf.loadLightbox(document.querySelectorAll('#twikoo .tk-content img:not(.tk-owo-emotion)'))
